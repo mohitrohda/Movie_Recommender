@@ -2,8 +2,8 @@ import streamlit as st
 import pickle
 
 # Load data
-movies = pickle.load(open("Movie_Recommender/movies_list.pkl", 'rb'))
-similarity = pickle.load(open("Movie_Recommender/similarity.pkl", 'rb'))
+movies = pickle.load(open("movies_list.pkl", 'rb'))
+similarity = pickle.load(open("similarity.pkl", 'rb'))
 movie_titles = movies['title'].values
 
 # Recommend movies (without posters)
